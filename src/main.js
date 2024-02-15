@@ -20,12 +20,3 @@ form.addEventListener('submit', (event) => {
     
     event.target.reset();
 })
-
-const options = {
-    captions: true,
-    captionSelector: 'img',
-    captionType: 'attr',
-    captionsData: 'alt',
-    captionPosition: 'bottom',
-    captionDelay: 250,
-};

@@ -29,7 +29,16 @@ export function renderImages(images, imagesList) {
     </a>`;
         }).join("");
     imagesList.innerHTML = markup;
-    const lightbox = new SimpleLightbox('.gallery a');
+    const lightbox = new SimpleLightbox('.gallery a', options);
     lightbox.on('show.simplelightbox');
     lightbox.refresh();
 }
+
+const options = {
+    captions: true,
+    captionSelector: 'img',
+    captionType: 'attr',
+    captionsData: 'alt',
+    captionPosition: 'bottom',
+    captionDelay: 250,
+};
